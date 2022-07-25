@@ -1,0 +1,402 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Header */
+Header {
+    height: 10vh;
+    border-bottom: 1px solid rgb(216, 215, 215);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* Header -> Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    text-transform: none;
+    height: 50px;
+}
+.logo img {
+    height: 25px;
+    position: relative;
+    top: 5px;
+}
+.logo a {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(16, 24, 35);
+    font-weight: 700;
+    margin-left: 5px;
+}
+.logo h1 span {
+    font-weight: 400;
+}
+/* Header -> nav */
+nav ul {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 50px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul a {
+    text-decoration: none;
+    color: rgb(16, 24, 35);
+}
+/* Header -> user-tools */
+.user-tools ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.user-tools ul li {
+    list-style: none;
+}
+.user-tools ul a {
+    text-decoration: none;
+    color: rgb(16, 24, 35);
+}
+.user-tools span {
+    position: relative;
+    top: 2px;
+}
+
+/* Main */
+main {
+    background-color: rgb(250, 250, 250);
+    height: 90vh;
+}
+main h1 {
+    margin: 70px 0 20px 100px;
+    display: inline-block;
+}
+main .main-all {
+    display: flex;
+}
+/* Main -> left-box */
+.main-all .boxes-container {
+    width: 45vw;
+    height: 60vh;
+    margin-left: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Main -> box1 */
+.main-all .boxes-container .box1 {
+    width: 100%;
+    height: 230px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-all .boxes-container .box1 > span {
+    display: inline-block;
+    border: 1.5px solid rgb(46, 225, 192);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 7px;
+    color: rgb(46, 225, 192);
+}
+.main-all .boxes-container .box1 .blue-box {
+    background: linear-gradient(to bottom, rgb(134, 213, 244), rgb(14, 184, 251));
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+}
+.main-all .boxes-container .box1 .blue-box > span {
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    color: rgb(14, 184, 251);
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    margin: 20px 0 20px 20px;
+}
+.main-all .boxes-container .box1 .blue-box h2 {
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+}
+.main-all .boxes-container .box1 .blue-box p {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 300;
+    font: 18px;
+    color: white;
+}
+.main-all .boxes-container .box1 h1 {
+    margin: 6px 0 10px 0;
+    color: rgb(8, 16, 63);
+    font-weight: 500;
+}
+.main-all .boxes-container .box1 .dots-and-select {
+    width: 360px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-all .boxes-container .box1 .dots-and-select .dots {
+    display: inline-block;
+}
+.main-all .boxes-container .box1 .dots-and-select .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(192, 212, 220);
+    display: inline-block;
+}
+.main-all .boxes-container .box1 .dots-and-select form {
+    display: inline-block;
+    width: 10%;
+    margin-left: 3px;
+}
+.main-all .boxes-container .box1 .dots-and-select form select[id^="level"] {
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    color: rgb(127, 127, 127);
+    border: 1px solid rgba(46, 225, 192, 0);
+    border-radius: 5px;
+}
+.main-all .boxes-container .box1 .dots-and-select form select[id^="level"]:hover, select[id^="level"]::selection {
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    color: rgb(127, 127, 127);
+    border: 1px solid rgb(46, 225, 192);
+    border-radius: 5px;
+}
+.main-all .boxes-container .box1 .dots-and-select p {
+    font-size: 26px;
+    margin-bottom: 3px;
+    color: rgb(8, 16, 63);
+}
+/* Need to put design of the selection input's text when the user is select the element */
+
+/* Main -> box2 */
+.main-all .boxes-container .box2 {
+    width: 100%;
+    height: 230px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-all .boxes-container .box2 > span {
+    display: inline-block;
+    border: 1.5px solid rgb(46, 225, 192);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 7px;
+    color: rgb(46, 225, 192);
+}
+.main-all .boxes-container .box2 .orange-box {
+    background: linear-gradient(to bottom, rgb(240, 216, 142), rgb(241, 182, 5));
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+}
+.main-all .boxes-container .box2 .orange-box > span {
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    color: rgb(241, 182, 5);
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    margin: 20px 0 20px 20px;
+}
+.main-all .boxes-container .box2 .orange-box h2 {
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+}
+.main-all .boxes-container .box2 .orange-box p {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 300;
+    font: 18px;
+    color: white;
+}
+.main-all .boxes-container .box2 h1 {
+    margin: 6px 0 10px 0;
+    color: rgb(8, 16, 63);
+    font-weight: 500;
+}
+.main-all .boxes-container .box2 .dots-and-select {
+    width: 360px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-all .boxes-container .box2 .dots-and-select .dots {
+    display: inline-block;
+}
+.main-all .boxes-container .box2 .dots-and-select .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(192, 212, 220);
+    display: inline-block;
+}
+.main-all .boxes-container .box2 .dots-and-select form {
+    display: inline-block;
+    width: 10%;
+}
+.main-all .boxes-container .box2 .dots-and-select form select[id^="level"] {
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    color: rgb(127, 127, 127);
+    border: 1px solid rgba(46, 225, 192, 0);
+    border-radius: 5px;
+}
+.main-all .boxes-container .box2 .dots-and-select form select[id^="level"]:hover, select[id^="level"]::selection {
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    color: rgb(127, 127, 127);
+    border: 1px solid rgb(46, 225, 192);
+    border-radius: 5px;
+}
+.main-all .boxes-container .box2 .dots-and-select p {
+    font-size: 26px;
+    margin-bottom: 3px;
+    color: rgb(8, 16, 63);
+}
+/* Need to put design of the selection input's text when the user is select the element */
+
+/* Main -> right-box */
+main .order-info {
+    width: 40vw;
+    height: 60vh;
+    margin-left: 30px; 
+    border-radius: 20px;
+    border: 1px solid rgb(216, 215, 215);
+}
+main .order-info h1 {
+    margin: 35px 0 30px 30px;
+    font-size: 28px;
+    color: rgb(8, 16, 63);
+}
+main .order-info .subtotal {
+    display: flex;
+    margin: 0 30px 25px 30px;
+    justify-content: space-between;
+}
+main .order-info .subtotal h2 {
+    color: rgb(126, 126, 126);
+    font-weight: 500;
+}
+main .order-info .subtotal p {
+    color: rgb(8, 16, 63);
+    font-weight: 500;
+    font-size: 25px;
+}
+main .order-info span {
+    margin-left: 30px;
+    color: rgb(36, 191, 163);
+    position: relative;
+    top: 7px;
+}
+main .order-info input[type="text"] {
+    width: 300px;
+    height: 45px;
+    font-size: 16px;
+    padding: 20px 15px;
+    font-weight: 500;
+    color: rgb(193, 193, 193);
+    margin: 0 10px 20px 10px;
+    border-radius: 6px;
+    border: 1px solid rgb(193, 193, 193);
+}
+main .order-info input[type="submit"] {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+    padding: 10px 5px;
+    font-weight: 500;
+    color: rgb(36, 191, 163);
+    background-color: white;
+    margin: 0 10px 30px 10px;
+    border-radius: 12px;
+    border: 1.5px solid rgb(36, 191, 163);
+}
+main .order-info input[type="submit"]:hover {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+    padding: 10px 5px;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(36, 191, 163);
+    margin: 0 10px 30px 10px;
+    border-radius: 12px;
+    border: 1.5px solid rgb(36, 191, 163);
+    transition: 0.2s;
+}
+main .order-info hr {
+    width: 510px;
+    margin-left: 30px;
+    border: 0.5px solid rgb(197, 196, 196);
+}
+main .order-info .total-payment {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+main .order-info .total-payment h2 {
+    font-weight: 400;
+    margin: 40px 0 20px 0px;
+}
+main .order-info .total-payment p {
+    margin: 40px 0 20px 0px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(36, 191, 163);
+}
+main .order-info a {
+    width: 90%;
+    height: 55px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(46, 225, 192);
+    text-decoration: none;
+    color: rgb(1, 1, 46);
+    margin: 40px auto;
+    border-radius: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1.5px solid rgb(46, 225, 192, 0);
+}
+main .order-info a:hover {
+    background-color: white;
+    border: 1.5px solid rgb(46, 225, 192);
+    transition: 0.3s;
+}
